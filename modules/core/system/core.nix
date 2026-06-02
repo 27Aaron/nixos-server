@@ -53,7 +53,10 @@ in
       };
       ${cfg.userName} = {
         isNormalUser = true;
-        extraGroups = [ "wheel" ];
+        extraGroups = [
+          "wheel"
+          "networkmanager"
+        ];
         hashedPassword = "$y$j9T$wKu2x.HrtXWLzO6Jot0y61$MHSAMfxnEacwmiQSzhhtBsm5iKcDfFDtBFA/gnWrGY3";
         openssh.authorizedKeys.keys = cfg.sshKeys;
       };

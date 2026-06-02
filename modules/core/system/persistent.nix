@@ -33,6 +33,9 @@ in
         "/var/lib/systemd"
         "/var/log"
 
+        "/var/lib/NetworkManager"
+        "/etc/NetworkManager/system-connections"
+
         # Complex configurations
         {
           directory = "/etc/nixos/nix-config";
